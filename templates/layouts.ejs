@@ -1,0 +1,19 @@
+<html class="h-100" dir="ltr" lang="en">
+    <head>
+        <% if(!login){ %>
+        <%- include('base/head') %>
+        <% } %>
+    </head>
+    <body>
+        <% if(!login){ %>
+            <%- include('base/navbar') %> 
+        <% } %>
+        <div class="main-content">
+            <%- include('base/alert') %>
+            <%- body %>
+        </div>
+    </body>
+    <footer>
+        <%- include('base/footer') %>
+    </footer>
+</html>
